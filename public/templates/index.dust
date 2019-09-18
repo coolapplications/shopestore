@@ -23,7 +23,7 @@
   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   		<div class="price">Cómpralo por sólo <span>$17.000</span></div>
   		<br>
-  		<a href="/products/details/1" class="button small">Product Details</a>
+  		<a href="/pages/registrar/1" class="button small">Registrar</a>
   	</div>
   	<div class="large-3 columns book">
   		<img src="/img/php4.jpg">
