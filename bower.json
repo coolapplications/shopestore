@@ -1,0 +1,21 @@
+{
+  "name": "shopestore",
+  "description": "shopping store for every one",
+  "main": "index.js",
+  "author": "HellSatan&#39;s",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.1.16"
+  }
+}
