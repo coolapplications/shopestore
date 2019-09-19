@@ -24,6 +24,7 @@
                             <li><a href="/">Home</a></li>
                             <li><a href="/pages/registrar">Registrar</a></li>
                             <li><a href="/cart">Cart</a></li>
+                            <li><a href="/pages/login">login</a></li>
                         </ul>
                     </div>
                 </div>
