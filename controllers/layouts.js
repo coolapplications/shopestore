@@ -7,5 +7,8 @@ module.exports = function(router){
 
 	router.get('/registrar', function(req, res){
 		res.render('layouts/header');
+	});
+	router.get('/footer', function(req, res){
+		res.render('layouts/footer');
     });
 }

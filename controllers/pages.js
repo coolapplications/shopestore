@@ -7,8 +7,18 @@ module.exports = function(router){
 
 	router.get('/registrar', function(req, res){
 		res.render('pages/registrar');
-    });
-    router.get('/login', function(req, res){
+		});
+		
+  router.get('/login', function(req, res){
 		res.render('pages/login');
 	});
+
+	router.get('/contacto', function(req, res){
+		res.render('pages/contacto');
+	});
+
+	router.get('/inicio', function(req, res){
+		res.render('pages/inicio');
+	});
+
 }
