@@ -21,4 +21,12 @@ module.exports = function(router){
 		res.render('pages/inicio');
 	});
 
+	router.get('/rastrear', function(req, res){
+		res.render('pages/rastrear');
+	});
+
+	router.get('/categorias', function(req, res){
+		res.render('pages/categorias');
+	});
+
 }

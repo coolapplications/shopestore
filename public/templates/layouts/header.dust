@@ -35,8 +35,8 @@
                               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                 aria-expanded="true">Tienda</a>
                               <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="category.html">Categorias</a></li>
-                                <li class="nav-item"><a class="nav-link" href="single-product.html">Detalles Del Producto</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/pages/categorias">Categorias</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/products/detalles">Detalles Del Producto</a></li>
                                 <li class="nav-item"><a class="nav-link" href="checkout.html">Chequeo Del Producto</a></li>
                                 <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmacion</a></li>
                                 <li class="nav-item"><a class="nav-link" href="cart.html">Carro de compras</a></li>
@@ -56,7 +56,7 @@
                               <ul class="dropdown-menu">
                                 <li class="nav-item"><a class="nav-link" href="/pages/login">Inciar Sesion</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/pages/registrar">Registrar</a></li>
-                                <li class="nav-item"><a class="nav-link" href="tracking-order.html">Rastrear</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/pages/rastrear">Rastrear</a></li>
                               </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="/pages/contacto">Contacto</a></li>

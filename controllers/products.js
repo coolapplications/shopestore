@@ -8,4 +8,8 @@ module.exports = function(router){
 	router.get('/details/:id', function(req, res){
 		res.render('products/details');
 	});
+
+	router.get('/detalles', function(req, res){
+		res.render('products/detalles');
+	});
 }
