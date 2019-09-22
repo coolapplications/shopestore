@@ -26,7 +26,7 @@
                         <div class="single-footer-widget tp_widgets ">
                             <h4 class="footer_title large_title">Nuestra mision</h4>
                             <p>
-                                SSer una tienda lider en en la venta de mercancia online
+                                Ser una tienda lider en en la venta de mercancia online
                             </p>
                             <p>
                                 tener un conversacion continua con nuestros clientes							</p>
@@ -36,12 +36,9 @@
                         <div class="single-footer-widget tp_widgets">
                             <h4 class="footer_title">Links Rapidos</h4>
                             <ul class="list">
-                                <li><a href="#">Inicio</a></li>
-                                <li><a href="#">Tienda</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Producto</a></li>
-                                <li><a href="#">Marca</a></li>
-                                <li><a href="#">Contacto</a></li>
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="/pages/categorias">Tienda</a></li>
+                                <li><a href="/pages/contacto">Contacto</a></li>
                             </ul>
                         </div>
                     </div>

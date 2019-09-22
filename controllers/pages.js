@@ -29,4 +29,8 @@ module.exports = function(router){
 		res.render('pages/categorias');
 	});
 
+	router.get('/cart', function(req, res){
+		res.render('pages/cart');
+	});
+
 }
