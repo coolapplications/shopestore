@@ -5,9 +5,6 @@ module.exports = function(router){
 		res.render('index');
 	});
 
-	router.get('/details/:id', function(req, res){
-		res.render('products/details');
-	});
 
 	router.get('/detalles', function(req, res){
 		res.render('products/detalles');
