@@ -1,5 +1,5 @@
 'use strict';
-
+const pool = require('../dataBase/dataBase');
 module.exports = function(router){
 	router.get('/', function(req, res){
 		res.render('index');
@@ -8,8 +8,14 @@ module.exports = function(router){
 	router.get('/registrar', function(req, res){
 		res.render('pages/registrar');
 		});
-		
+	
+	router.post('/registrar', function(req, res){
+		console.log(req.post);
+
+		res.send('received');
+	});
   router.get('/login', function(req, res){
+
 		res.render('pages/login');
 	});
 
