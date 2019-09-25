@@ -1,6 +1,7 @@
 'use strict';
 
 var express = require('express');
+var cors = require('cors');
 var kraken = require('kraken-js');
 
 
@@ -21,6 +22,7 @@ options = {
 };
 
 app = module.exports = express();
+app.use(cors());
 app.use(kraken(options));
 app.on('start', function () {
     console.log('Application ready to serve requests.');

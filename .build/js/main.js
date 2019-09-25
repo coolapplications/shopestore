@@ -113,10 +113,7 @@ $(function() {
       });
     
     }
-      var cookieParser = require('cookie-parser')
-      var csrf = require('csurf')
-      var bodyParser = require('body-parser')
-      var express = require('express')
+
 
       // setup route middlewares
       var csrfProtection = csrf({ cookie: true })

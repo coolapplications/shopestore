@@ -1,8 +1,8 @@
-const express = require('express');
-const router = express.Router();
 
-router.post('/registrar', (req, res) => {
-    console.log(req.body);
-});
-
-module.exports = router;
+'use strict';
+module.exports = function(router){
+	router.post('/registrar', (req, res) => {
+        console.log(req.body);
+        res.json({status:200});
+    });
+}
