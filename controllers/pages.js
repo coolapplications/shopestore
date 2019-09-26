@@ -19,8 +19,8 @@ module.exports = function (router) {
         res.render('pages/registrar');
     });
     router.post('/registrar', function (req, res) {
-        console.log(req.body)
-        res.send('got it')
+        console.log(req.body);
+        res.send('got it');
     });
 
 
@@ -50,4 +50,4 @@ module.exports = function (router) {
         res.render('pages/cart');
     });
 
-}
+};

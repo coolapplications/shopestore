@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 /* eslint-disable no-undef */
 /**
  * what-input - A global utility for tracking the current input method (mouse, keyboard or touch).
@@ -9,11 +10,11 @@
     if (typeof exports === 'object' && typeof module === 'object')
         module.exports = factory();
     else if (typeof define === 'function' && define.amd)
-        define("whatInput", [], factory);
+        define('whatInput', [], factory);
     else if (typeof exports === 'object')
-        exports["whatInput"] = factory();
+        exports['whatInput'] = factory();
     else
-        root["whatInput"] = factory();
+        root['whatInput'] = factory();
 })(this, function () {
     return /******/ (function (modules) { // webpackBootstrap
         /******/ // The module cache
@@ -67,7 +68,7 @@
 
         /******/ // __webpack_public_path__
         /******/
-        __webpack_require__.p = "";
+        __webpack_require__.p = '';
 
         /******/ // Load entry module and return exports
         /******/
@@ -79,7 +80,7 @@
     ([
         /* 0 */
         /***/
-        (function (module, exports) {
+        (function (module) {
 
             'use strict';
 
@@ -503,5 +504,5 @@
             /***/
         })
         /******/
-    ])
-});;
+    ]);
+});
