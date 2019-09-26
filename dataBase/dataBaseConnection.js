@@ -1,6 +1,6 @@
 const mysql = require('mysql')
 
-const { database } = require('./keys')
+const { database } = require('./dataBase')
 
 const pool = mysql.createPool(database)
 
