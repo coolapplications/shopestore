@@ -4,46 +4,49 @@ const pool = require('../dataBase/dataBase');
 
 
 module.exports = function(router){
-	router.get('/', function(req, res){
+	router.get('/', function(_req, res){
 		res.render('index');
 	});
 	
-  router.get('/login', function(req, res){
+  router.get('/login', function(_req, res){
 
 		res.render('pages/login');
 	});
 
 
-	router.get('/registrar', function(req, res){
+	router.get('/registrar', function(_req, res){
 		console.log('render');
 		res.render('pages/registrar');
 		});
-	
+	router.post('/registrar', function (req, res) {
+		console.log(req.body)
+		res.send('got it')
+	});
 	
 
 
-  router.get('/login', function(req, res){
+  router.get('/login', function(_req, res){
 
 		res.render('pages/login');
 	});
 
-	router.get('/contacto', function(req, res){
+	router.get('/contacto', function(_req, res){
 		res.render('pages/contacto');
 	});
 
-	router.get('/inicio', function(req, res){
+	router.get('/inicio', function(_req, res){
 		res.render('pages/inicio');
 	});
 
-	router.get('/rastrear', function(req, res){
+	router.get('/rastrear', function(_req, res){
 		res.render('pages/rastrear');
 	});
 
-	router.get('/categorias', function(req, res){
+	router.get('/categorias', function(_req, res){
 		res.render('pages/categorias');
 	});
 
-	router.get('/cart', function(req, res){
+	router.get('/cart', function(_req, res){
 		res.render('pages/cart');
 	});
 

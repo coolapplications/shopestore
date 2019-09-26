@@ -1,8 +1,8 @@
 
-'use strict';
-module.exports = function(router){
-	router.post('/registrar', (req, res) => {
-        console.log(req.body);
-        res.json({status:200});
-    });
+'use strict'
+module.exports = function (router) {
+  router.post('/pages/registrar', function (req, res) {
+    console.log(req.body)
+    res.send('got it')
+  })
 }
