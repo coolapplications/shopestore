@@ -5,7 +5,7 @@ const pool = require('../dataBase/dataBase');
 
 module.exports = function(router){
 	router.get('/', function(_req, res){
-		res.render('index');
+		res.render('index')
 	});
 	
   router.get('/login', function(_req, res){
