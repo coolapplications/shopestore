@@ -1,7 +1,6 @@
 /*global requirejs:true*/
 'use strict';
 
-
 requirejs.config({
     paths: {}
 });

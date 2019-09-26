@@ -1,36 +1,276 @@
-{>"layouts/master" /}
+{>"layouts/header"/}
 
-{<body}
-  	<div class="large-3 columns book">
-  		<img src="/img/php1.jpg">
-  		<h4>Tablet</h4>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  		<div class="price">Cómpralo por sólo <span>$190.000</span></div>
-  		<br>
-  		<a href="/products/details/1" class="button small">Product Details</a>
-  	</div>
-  	<div class="large-3 columns book">
-  		<img src="/img/php2.jpg">
-  		<h4>Morral</h4>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  		<div class="price">Cómpralo por sólo <span>$99.000</span></div>
-  		<br>
-  		<a href="/products/details/1" class="button small">Product Details</a>
-  	</div>
-  	<div class="large-3 columns book">
-  		<img src="/img/php3.jpg">
-  		<h4>Node Web Development</h4>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  		<div class="price">Cómpralo por sólo <span>$17.000</span></div>
-  		<br>
-  		<a href="/products/details/1" class="button small">Product Details</a>
-  	</div>
-  	<div class="large-3 columns book">
-  		<img src="/img/php4.jpg">
-  		<h4>Calculadora</h4>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  		<div class="price">Cómpralo por sólo <span>$50.000</span></div>
-  		<br>
-  		<a href="/products/details/1" class="button small">Product Details</a>
-  	</div>
-{/body}
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hell santans shop</title>
+        <link rel="icon" href="/img/Fevicon.png" type="image/png">
+        <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendors/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="/vendors/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="/vendors/nice-select/nice-select.css">
+        <link rel="stylesheet" href="/vendors/owl-carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+
+
+<body>
+ 
+            <!--================ Hero banner start =================-->
+            <section class="hero-banner">
+              <div class="container">
+                <div class="row no-gutters align-items-center pt-60px">
+                  <div class="col-5 d-none d-sm-block">
+                    <div class="hero-banner__img">
+                      <img class="img-fluid" src="/img/home/hero-banner.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+                    <div class="hero-banner__content">
+                      <h4>Comprar es divertido</h4>
+                      <h1>Navega por nuestros productos premium</h1>
+                      <p>Hay bastantes productos en nuestro inventario que sabemos que te van a gustar</p>
+                      <a class="button button-hero" href="#">Navegar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--================ Hero banner start =================-->
+        
+            <!--================ Hero Carousel start =================-->
+            <section class="section-margin mt-0">
+              <div class="owl-carousel owl-theme hero-carousel">
+                <div class="hero-carousel__slide">
+                  <img src="/img/home/hero-slide1.png" alt="" class="img-fluid">
+                  <a href="#" class="hero-carousel__slideOverlay">
+                    <h3>Wireless Headphone</h3>
+                    <p>Accesorios</p>
+                  </a>
+                </div>
+                <div class="hero-carousel__slide">
+                  <img src="/img/home/hero-slide2.png" alt="" class="img-fluid">
+                  <a href="#" class="hero-carousel__slideOverlay">
+                    <h3>Wireless Headphone</h3>
+                    <p>Accesorios</p>
+                  </a>
+                </div>
+                <div class="hero-carousel__slide">
+                  <img src="/img/home/hero-slide3.png" alt="" class="img-fluid">
+                  <a href="#" class="hero-carousel__slideOverlay">
+                    <h3>Wireless Headphone</h3>
+                    <p>Accesorios</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <!--================ Hero Carousel end =================-->
+        
+            <!-- ================ trending product section start ================= -->
+            <section class="section-margin calc-60px">
+              <div class="container">
+                <div class="section-intro pb-60px">
+                  <p>Articulos populares</p>
+                  <h2>Productos <span class="section-intro__style">Tedencia</span></h2>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                      <div class="card-product__img">
+                        <img class="card-img" src="/img/product/product1.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                          <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                          <li><button><i class="ti-shopping-cart"></i></button></li>
+                          <li><button><i class="ti-heart"></i></button></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <p>Accesesorios</p>
+                        <h4 class="card-product__title"><a href="/products/detalles">Reloj de cuarzo</a></h4>
+                        <p class="card-product__price">$150.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                      <div class="card-product__img">
+                        <img class="card-img" src="/img/product/product2.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                          <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a>  </li>
+                          <li><button><i class="ti-shopping-cart"></i></button></li>
+                          <li><button><i class="ti-heart"></i></button></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <p>Belleza</p>
+                        <h4 class="card-product__title"><a href="/products/detalles">Crema de mujer</a></h4>
+                        <p class="card-product__price">$150.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                      <div class="card-product__img">
+                        <img class="card-img" src="/img/product/product3.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                          <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                          <li><button><i class="ti-shopping-cart"></i></button></li>
+                          <li><button><i class="ti-heart"></i></button></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <p>Decoracion</p>
+                        <h4 class="card-product__title"><a href="/products/detalles">Luces de alcoba</a></h4>
+                        <p class="card-product__price">$150.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                      <div class="card-product__img">
+                        <img class="card-img" src="/img/product/product6.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                          <li><a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                          <li><button><i class="ti-shopping-cart"></i></button></li>
+                          <li><button><i class="ti-heart"></i></button></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <p>Juguetes</p>
+                        <h4 class="card-product__title"><a href="/products/detalles">Carro de juguete</a></h4>
+                        <p class="card-product__price">$150.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                      <div class="card-product__img">
+                        <img class="card-img" src="/img/product/product5.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                          <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                          <li><button><i class="ti-shopping-cart"></i></button></li>
+                          <li><button><i class="ti-heart"></i></button></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <p>Accesorios</p>
+                        <h4 class="card-product__title"><a href="/products/detalles">Mochila corporativa</a></h4>
+                        <p class="card-product__price">$150.00</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center card-product">
+                      <div class="card-product__img">
+                        <img class="card-img" src="/img/product/product7.png" alt="">
+                        <ul class="card-product__imgOverlay">
+                          <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                          <li><button><i class="ti-shopping-cart"></i></button></li>
+                          <li><button><i class="ti-heart"></i></button></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <p>Accessories</p>
+                        <h4 class="card-product__title"><a href="/products/detalles">Bluetooth</a></h4>
+                        <p class="card-product__price">$150.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ================ trending product section end ================= -->
+        
+            <!-- ================ Productos mas vendidos ================= -->
+            <section class="section-margin calc-60px">
+              <div class="container">
+                <div class="section-intro pb-60px">
+                  <p>Productos mas vendidos</p>
+                  <h2>Mejor <span class="section-intro__style">Vendidos</span></h2>
+                </div>
+                <div class="owl-carousel owl-theme" id="bestSellerCarousel">
+                  <div class="card text-center card-product">
+                    <div class="card-product__img">
+                      <img class="img-fluid" src="/img/product/product1.png" alt="">
+                      <ul class="card-product__imgOverlay">
+                        <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                        <li><button><i class="ti-shopping-cart"></i></button></li>
+                        <li><button><i class="ti-heart"></i></button></li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <p>Accessories</p>
+                      <h4 class="card-product__title"><a href="/products/detalles">Quartz Belt Watch</a></h4>
+                      <p class="card-product__price">$150.00</p>
+                    </div>
+                  </div>
+        
+                  <div class="card text-center card-product">
+                    <div class="card-product__img">
+                      <img class="img-fluid" src="/img/product/product2.png" alt="">
+                      <ul class="card-product__imgOverlay">
+                        <li><a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button></a></li>
+                        <li><button><i class="ti-shopping-cart"></i></button></li>
+                        <li><button><i class="ti-heart"></i></button></li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <p>Belleza</p>
+                      <h4 class="card-product__title"><a href="/products/detalles">Crema de mujer</a></h4>
+                      <p class="card-product__price">$150.00</p>
+                    </div>
+                  </div>
+        
+                  <div class="card text-center card-product">
+                    <div class="card-product__img">
+                      <img class="img-fluid" src="/img/product/product3.png" alt="">
+                      <ul class="card-product__imgOverlay">
+                        <li> <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                        <li><button><i class="ti-shopping-cart"></i></button></li>
+                        <li><button><i class="ti-heart"></i></button></li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <p>Decoracion</p>
+                      <h4 class="card-product__title"><a href="/products/detalles">Luces de alcoba</a></h4>
+                      <p class="card-product__price">$150.00</p>
+                    </div>
+                  </div>
+        
+                  <div class="card text-center card-product">
+                    <div class="card-product__img">
+                      <img class="img-fluid" src="/img/product/product4.png" alt="">
+                      <ul class="card-product__imgOverlay">
+                        <li>  <a class="nav-link" href="/products/detalles"> <button><i class="ti-search"></i></button> </a> </li>
+                        <li><button><i class="ti-shopping-cart"></i></button></li>
+                        <li><button><i class="ti-heart"></i></button></li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <p>Decoracion</p>
+                      <h4 class="card-product__title"><a href="/products/detalles">Luces de alcoba</a></h4>
+                      <p class="card-product__price">$150.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ================ Best Selling item  carousel end ================= -->
+
+            <script src="/vendors/jquery/jquery-3.2.1.min.js"></script>
+            <script src="/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+            <script src="/vendors/skrollr.min.js"></script>
+            <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+            <script src="/vendors/nice-select/jquery.nice-select.min.js"></script>
+            <script src="/vendors/jquery.form.js"></script>
+            <script src="/vendors/jquery.validate.min.js"></script>
+            <script src="/vendors/contact.js"></script>
+            <script src="/vendors/jquery.ajaxchimp.min.js"></script>
+            <script src="/vendors/mail-script.js"></script>
+            <script src="/js/main.js"></script>
+          {>"layouts/footer"/}
+</body>

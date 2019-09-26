@@ -10,13 +10,17 @@
         "all": "npm run build && npm run test"
     },
     "dependencies": {
+        "body-parser": "^1.19.0",
         "construx": "^1.0.0",
         "construx-copier": "^1.0.0",
         "construx-dustjs": "^1.1.0",
         "construx-less": "^1.0.0",
+        "cors": "^2.8.5",
+        "csurf": "^1.10.0",
         "dust-makara-helpers": "^4.2.0",
         "eslint": "^1.10.3",
-        "express": "^4.12.2",
+        "express": "^4.17.1",
+        "express-validator": "^6.2.0",
         "kraken-js": "^2.0.0",
         "makara": "^2.0.3",
         "requirejs": "^2.3.6"
