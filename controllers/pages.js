@@ -16,7 +16,13 @@ module.exports = function (router) {
   })
 
   router.post('/registrar', function (req, res) {
-    console.log(req.body)
+    const { name, email, password } = req.body
+    const user_data = {
+      name,
+      email,
+      password
+    }
+    console.log(user_data)
     res.render('pages/registrar')
   })
 

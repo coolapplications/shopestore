@@ -1,5 +1,5 @@
 const mysql = require('mysql')
-
+const { promisify } = require('util')
 const { database } = require('./dataBase')
 
 const pool = mysql.createPool(database)
@@ -19,5 +19,11 @@ pool.getConnection((error, connection) => {
       default:
         console.error('UNKNOWN')
     }
+  } else {
+    connection.release()
+    console.log('Connected')
   }
 })
+promisify(pool.query)
+
+module.exports = pool
