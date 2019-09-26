@@ -9,4 +9,4 @@ module.exports = function (router) {
     router.get('/detalles', function (req, res) {
         res.render('products/detalles');
     });
-}
+};
