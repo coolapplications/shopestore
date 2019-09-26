@@ -1,53 +1,46 @@
-'use strict';
-const pool = require('../dataBase/dataBase');
+'use strict'
+const pool = require('../dataBase/dataBaseConnection')
 
+module.exports = function (router) {
+  router.get('/', function (_req, res) {
+    res.render('index')
+  })
 
+  router.get('/login', function (_req, res) {
+    res.render('pages/login')
+  })
 
-module.exports = function(router){
-	router.get('/', function(_req, res){
-		res.render('index');
-	});
-	
-  router.get('/login', function(_req, res){
+  router.get('/registrar', function (_req, res) {
+    console.log('render')
+    res.render('pages/registrar')
+  })
 
-		res.render('pages/login');
-	});
+  router.post('/registrar', function (req, res) {
+    console.log(req.body)
+    res.render('pages/registrar')
+  })
 
+  router.get('/login', function (_req, res) {
+    res.render('pages/login')
+  })
 
-	router.get('/registrar', function(_req, res){
-		console.log('render');
-		res.render('pages/registrar');
-		});
-	router.post('/registrar', function (req, res) {
-		console.log(req.body)
-		res.send('got it')
-	});
-	
+  router.get('/contacto', function (_req, res) {
+    res.render('pages/contacto')
+  })
 
+  router.get('/inicio', function (_req, res) {
+    res.render('pages/inicio')
+  })
 
-  router.get('/login', function(_req, res){
+  router.get('/rastrear', function (_req, res) {
+    res.render('pages/rastrear')
+  })
 
-		res.render('pages/login');
-	});
+  router.get('/categorias', function (_req, res) {
+    res.render('pages/categorias')
+  })
 
-	router.get('/contacto', function(_req, res){
-		res.render('pages/contacto');
-	});
-
-	router.get('/inicio', function(_req, res){
-		res.render('pages/inicio');
-	});
-
-	router.get('/rastrear', function(_req, res){
-		res.render('pages/rastrear');
-	});
-
-	router.get('/categorias', function(_req, res){
-		res.render('pages/categorias');
-	});
-
-	router.get('/cart', function(_req, res){
-		res.render('pages/cart');
-	});
-
+  router.get('/cart', function (_req, res) {
+    res.render('pages/cart')
+  })
 }
