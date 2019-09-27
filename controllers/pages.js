@@ -17,13 +17,16 @@ module.exports = function (router) {
   })
 
   router.post('/registrar', async function (req, res) {
-    const { name, email, password } = req.body
-    const userData = {
-      name,
-      email,
-      password
-    }
-    pool.query('INSERT INTO USERS SET ?', [userData])
+	const { name, email, password } = req.body
+	const userData = {
+		USERNAME: name,
+		EMAIL: email,
+		PASSWORD: password
+	}
+	const sql = 'INSERT INTO USERS SET ?'
+	pool.query(sql, [userData])
+
+
     res.render('pages/registrar')
   })
 

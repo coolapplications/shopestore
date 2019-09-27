@@ -22,11 +22,9 @@ pool.getConnection((error, connection) => {
   }
 
   if (connection) {
-      connection.release()
-      console.log('Here')
+    connection.release()
   }
-  console.log('Connected')
-  return
+
 })
 promisify(pool.query)
 module.exports = pool
