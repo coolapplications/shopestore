@@ -19,11 +19,14 @@ pool.getConnection((error, connection) => {
       default:
         console.error('UNKNOWN')
     }
-  } else {
-    connection.release()
-    console.log('Connected')
   }
+
+  if (connection) {
+      connection.release()
+      console.log('Here')
+  }
+  console.log('Connected')
+  return
 })
 promisify(pool.query)
-
 module.exports = pool

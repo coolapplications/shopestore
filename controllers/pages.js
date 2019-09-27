@@ -1,6 +1,7 @@
 'use strict'
 const pool = require('../dataBase/dataBaseConnection')
-
+const { check, validationResult } = require('express-validator')
+const validationsNewUser = [check('name').isLength({ min: 4 }), check('email').isEmail(), check('password').isLength({ min: 5 })]
 module.exports = function (router) {
   router.get('/', function (_req, res) {
     res.render('index')
@@ -15,14 +16,14 @@ module.exports = function (router) {
     res.render('pages/registrar')
   })
 
-  router.post('/registrar', function (req, res) {
+  router.post('/registrar', async function (req, res) {
     const { name, email, password } = req.body
-    const user_data = {
+    const userData = {
       name,
       email,
       password
     }
-    console.log(user_data)
+    pool.query('INSERT INTO USERS SET ?', [userData])
     res.render('pages/registrar')
   })
 
