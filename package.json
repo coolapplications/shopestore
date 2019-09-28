@@ -25,6 +25,7 @@
         "jshint": "^2.10.2",
         "kraken-js": "^2.0.0",
         "makara": "^2.0.3",
+        "mysql": "github:mysqljs/mysql",
         "requirejs": "^2.3.6"
     },
     "devDependencies": {
