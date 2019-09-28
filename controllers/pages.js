@@ -13,14 +13,12 @@ module.exports = function (router) {
   router.post('/login', async function (req, res) {
     const { name } = req.body
     const sql = 'SELECT * FROM USERS WHERE USERNAME = ? AND PASSWORD = ?'
-    pool.query(sql, [name[0], name[1]], function (err, result) {
+    var results = function (err, result) {
       if (err) throw err
-      console.log(result)
-    })
-
-    res.render('pages/login')
+      res.render('pages/login')
+    }
+    pool.query(sql, [name[0], name[1]], results)
   })
-
 
   router.post('/registrar', async function (req, res) {
     const { name, email, password } = req.body
