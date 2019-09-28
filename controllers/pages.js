@@ -1,7 +1,6 @@
 'use strict'
 const pool = require('../dataBase/dataBaseConnection')
-const { check, validationResult } = require('express-validator')
-const validationsNewUser = [check('name').isLength({ min: 4 }), check('email').isEmail(), check('password').isLength({ min: 5 })]
+var popup = require('popups')
 module.exports = function (router) {
   router.get('/', function (_req, res) {
     res.render('index')
@@ -15,7 +14,12 @@ module.exports = function (router) {
     const sql = 'SELECT * FROM USERS WHERE USERNAME = ? AND PASSWORD = ?'
     var results = function (err, result) {
       if (err) throw err
-      res.render('pages/login')
+      console.log(result.length)
+      if (result.length === 0) {
+        popup.alert({ content: 'Incorrect password or user' })
+        res.render('pages/login')
+      } else res.render('pages/login')
+
     }
     pool.query(sql, [name[0], name[1]], results)
   })
