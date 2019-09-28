@@ -13,7 +13,6 @@ module.exports = function (router) {
     const sql = 'SELECT * FROM USERS WHERE USERNAME = ? AND PASSWORD = ?'
     var results = function (err, result) {
       if (err) throw err
-      console.log(result.length)
       if (result.length === 0) {
         res.render('pages/login', { message: 'Incorrect password or account' })
       } else res.render('pages/login')
