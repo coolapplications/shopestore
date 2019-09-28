@@ -18,6 +18,9 @@
 
 
 <body>
+		<div class="alert alert-primary" role="alert">
+			{message}
+			  </div>
     <section class="blog-banner-area" id="category">
 		<div class="container h-100">
 			<div class="blog-banner">
@@ -77,6 +80,9 @@
     <script src="/vendors/mail-script.js"></script>
 	<script src="/js/main.js"></script>
     <script src="/vendors/jquery.form.js"></script>
-    <script src="/vendors/jquery.validate.min.js"></script>
+	<script src="/vendors/jquery.validate.min.js"></script>
+	<script>  var message = {message}
+			  if(message) alert(message);
+	</script>
     {>"layouts/footer"/}
 </body>

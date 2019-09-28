@@ -26,6 +26,7 @@
         "kraken-js": "^2.0.0",
         "makara": "^2.0.3",
         "mysql": "github:mysqljs/mysql",
+        "popups": "^1.1.3",
         "requirejs": "^2.3.6"
     },
     "devDependencies": {
@@ -42,6 +43,7 @@
         "grunt-makara-amdify": "^1.0.1",
         "grunt-mocha-cli": "^1.14.0",
         "mocha": "^1.18.0",
+        "nodemon": "^1.19.2",
         "supertest": "^0.9.0"
     }
 }
