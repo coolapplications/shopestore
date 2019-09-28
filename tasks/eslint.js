@@ -2,9 +2,7 @@
 
 module.exports = function eslint(grunt) {
     // Load task
-    grunt.loadNpmTasks('grunt-eslint'); {
-        "parser": "babel-eslint"
-    };
+    grunt.loadNpmTasks('grunt-eslint');
 
     // Options
     return {
@@ -20,5 +18,6 @@ module.exports = function eslint(grunt) {
             'models/**/*.js',
             'public/js/**/*.js'
         ]
+        "parser": "babel-eslint"
     };
 };
