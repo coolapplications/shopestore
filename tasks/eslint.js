@@ -2,10 +2,13 @@
 
 module.exports = function eslint(grunt) {
     // Load task
-    grunt.loadNpmTasks('grunt-eslint');
+    grunt.loadNpmTasks('grunt-eslint'); {
+        "parser": "babel-eslint"
+    };
 
     // Options
     return {
+
         options: {
             configFile: '.eslintrc',
             rulePaths: ['node_modules/eslint/lib/rules']
