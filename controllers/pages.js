@@ -10,6 +10,16 @@ module.exports = function (router) {
   router.get('/login', function (_req, res) {
     res.render('pages/login')
   })
+  router.post('/login', async function (req, res) {
+    const { name } = req.body
+    const sql = 'SELECT * FROM USERS WHERE USERNAME = ? AND PASSWORD = ?'
+    pool.query(sql, [name[0], name[1]], function (err, result) {
+      if (err) throw err
+      console.log(result)
+    })
+
+    res.render('pages/login')
+  })
 
   router.get('/registrar', function (_req, res) {
     console.log('render')
@@ -17,15 +27,14 @@ module.exports = function (router) {
   })
 
   router.post('/registrar', async function (req, res) {
-	const { name, email, password } = req.body
-	const userData = {
-		USERNAME: name,
-		EMAIL: email,
-		PASSWORD: password
-	}
-	const sql = 'INSERT INTO USERS SET ?'
-	pool.query(sql, [userData])
-
+    const { name, email, password } = req.body
+    const userData = {
+      USERNAME: name,
+      EMAIL: email,
+      PASSWORD: password
+    }
+    const sql = 'INSERT INTO USERS SET ?'
+    pool.query(sql, [userData])
 
     res.render('pages/registrar')
   })
