@@ -1,8 +1,3 @@
-/*jshint esversion: 6 */
-
-'use strict';
-
-
 module.exports = function (grunt) {
 
     // Load the project's grunt tasks from a directory
