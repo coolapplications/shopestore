@@ -5,9 +5,10 @@
     "author": "HellSatan&#39;s",
     "main": "index.js",
     "scripts": {
+        "build": "grunt uglify",
         "test": "grunt test",
-        "build": "grunt build",
-        "all": "npm run build && npm run test"
+        "all": "npm run build && npm run test",
+        "start": "node server.js"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
@@ -22,6 +23,7 @@
         "eslint-scope": "^5.0.0",
         "express": "^4.17.1",
         "express-validator": "^6.2.0",
+        "grunt-contrib-uglify": "4.0.1",
         "grunt-copy-browser-modules": "^7.0.1",
         "jshint": "^2.10.2",
         "kraken-js": "^2.0.0",
