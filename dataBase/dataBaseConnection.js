@@ -24,15 +24,7 @@ pool.getConnection((error, connection) => {
   if (connection) {
     connection.release()
   }
-  const sql = 'SELECT * FROM USERS WHERE USERNAME = ? AND PASSWORD = ?'
-  var userInfo = {
-    USERNAME: 'Presi',
-    PASSWORD: '1234'
-  }
-  connection.query(sql, [userInfo.USERNAME, userInfo.PASSWORD], function (err, result) {
-    if (err) throw err
-    console.log(result)
-  })
+
 })
 promisify(pool.query)
 module.exports = pool

@@ -44,7 +44,7 @@
 					<div class="login_box_img">
 						<div class="hover">
 							<h4>Ya tienes cuenta</h4>
-							<a class="button button-account" href="login.html">Inicia sesion</a>
+							<a class="button button-account" href="/pages/login">Inicia sesion</a>
 						</div>
 					</div>
 				</div>

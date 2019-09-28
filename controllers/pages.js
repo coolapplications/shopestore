@@ -21,6 +21,19 @@ module.exports = function (router) {
     res.render('pages/login')
   })
 
+  router.post('/login', async function (req, res) {
+    const body = req.body
+    const name = body.name[0]
+    const password = body.name[1]
+    const loginInfo = {
+      USERNAME: name,
+      PASSWORD: password
+    }
+    console.log(loginInfo)
+    const sql = 'SELECT * FROM USERS WHERE USERNAME = ?, PASSWORD = ?'
+    console.log(pool.query(sql, [loginInfo]))
+    res.render('index')
+  })
   router.get('/registrar', function (_req, res) {
     console.log('render')
     res.render('pages/registrar')
