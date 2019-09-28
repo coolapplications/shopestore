@@ -1,6 +1,5 @@
 'use strict'
 const pool = require('../dataBase/dataBaseConnection')
-var popup = require('popups')
 module.exports = function (router) {
   router.get('/', function (_req, res) {
     res.render('index')
@@ -16,12 +15,14 @@ module.exports = function (router) {
       if (err) throw err
       console.log(result.length)
       if (result.length === 0) {
-        popup.alert({ content: 'Incorrect password or user' })
-        res.render('pages/login')
+        res.render('pages/login', { message: 'Incorrect password or account' })
       } else res.render('pages/login')
 
     }
     pool.query(sql, [name[0], name[1]], results)
+  })
+  router.get('/registrar', function (_req, res) {
+    res.render('pages/registrar')
   })
 
   router.post('/registrar', async function (req, res) {
